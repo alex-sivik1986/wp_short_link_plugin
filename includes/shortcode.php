@@ -12,8 +12,7 @@ function frontend_wp_enqueue_scripts()
         true);
     wp_enqueue_style(
         'style-users',
-        plugins_url('/assets/front/css/styles.css', dirname(__FILE__, 1)),
-
+        plugins_url('/assets/front/css/styles.css', dirname(__FILE__, 1))
     );
     wp_localize_script(
         'script-users',
@@ -29,8 +28,8 @@ function user_short_shortcode(): string
             <form class="user_short_form" id="short_form" method="POST">
                 <label for="original_link">Введіть оригінальне посилання для скорочення</label>
                 <input id="original_link" class="wp-filter-search" name="original" type="text" />
-            <div class="reload"><img src="' . plugin_dir_url(dirname(__FILE__)) . 'img/1494.gif"></div>
             <div class="error-message"></div>
+            <div class="reload"><img src="' . plugin_dir_url(dirname(__FILE__)) . 'img/icons8-spinner.gif"></div>
             <div class="short-url"></div>
                 <div class="full-width">
                     <button type="submit">Скоротити</button>

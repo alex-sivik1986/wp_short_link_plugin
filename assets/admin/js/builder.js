@@ -10,7 +10,7 @@ jQuery(document).ready(function() {
             beforeSend: function() {
                 jQuery('.reload').css('display','block');
 
-                jQuery('form#upload_form button').text('.........');
+                jQuery('form#upload_form button').text('Обробка...');
             },
             success: function(data) {
                 jQuery('.reload').css('display','none');

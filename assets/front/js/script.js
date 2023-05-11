@@ -9,8 +9,7 @@ jQuery(document).ready(function() {
             crossDomain: true,
             beforeSend: function() {
                 jQuery('.reload').css('display','block');
-
-                jQuery('form#short_form button').text('.........');
+                jQuery('form#short_form button').text('Обробка...');
             },
             success: function(data) {
                 console.log()

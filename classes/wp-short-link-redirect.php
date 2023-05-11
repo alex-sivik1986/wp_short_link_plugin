@@ -6,11 +6,17 @@ class RedirectShortLink
     public static function redirect_user()
     {
         global $wp_query;
-
         if($wp_query->is_404())
         {
-            $data = self::findSQLLink($wp_query->query["pagename"]);
-            if(is_array($data))
+            $result = $wp_query->query;
+            $value = '';
+            if(is_array($result) and !array_key_exists('attachment',$result) and count($result) <= 2)
+            {
+                $value = implode("", $result);
+            }
+
+            $data = self::findSQLLink($value);
+            if(is_array($data) && !empty($data))
             {
                 wp_redirect($data['link_original']);
                 exit();

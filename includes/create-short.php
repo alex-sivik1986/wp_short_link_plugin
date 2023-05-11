@@ -7,9 +7,9 @@ if(!class_exists('OriginalLinkValidate'))
 
 class CreateShortUrl
 {
-    private int $long = 5;
-    public string $original;
-    public string $short_result;
+    private $long = 5;
+    public $original;
+    public $short_result;
 
     public function __construct($original)
     {

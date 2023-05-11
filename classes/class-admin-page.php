@@ -57,11 +57,14 @@ class LinkPages
                             <input type="text" class="regular-text" name="original" value="">
                             <button class="button button-primary" type="submit">Скоротити</button>
                         </td>
+                        <td>
+                            Шорткод форми для сторінок на сайті <div class="shortcode-url">[short_links]</div>
+                        </td>
                     </tr>
                     </tbody>
                 </table>
             </form>
-            <div class="reload"><img src="<?= plugin_dir_url( dirname( __FILE__ ) ) ?>img/1494.gif"></div>
+            <div class="reload"><img src="<?= plugin_dir_url( dirname( __FILE__ ) ) ?>img/icons8-spinner.gif"></div>
             <div class="error-message"></div>
             <div class="short-url"></div>
         </div>
