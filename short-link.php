@@ -1,11 +1,11 @@
 <?php
 /*
- * Plugin Name:       Short Link
+ * Plugin Name:       Short Links Form
  * Description:       Створює короткі посилання
  * Version:           1.0
  * Requires at least: 5.2
  * Requires PHP:      7.2
- * Author:            Oleksandr Suvodidov
+ * Author:            Oleksandr Sivik
  */
 
 defined('ABSPATH') or die;
